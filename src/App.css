@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+body {
+  font-family: 'Pirata One', cursive;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  background: #1b1523;
+  color: #ffcc00;
+}
+
+.App {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-shadow: 2px 2px 8px black;
+}
+
+button {
+  background: #ff4500;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #e63900;
+  transform: scale(1.1);
+}
+
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  gap: 15px;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  .card-grid {
+    grid-template-columns: repeat(4, 0fr);
+  }
+  button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .card-grid {
+    grid-template-columns: repeat(4, 0fr);
+  }
+  button {
+    font-size: 0.9em;
+    padding: 6px 12px;
+  }
+}
+@media (max-width: 380px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width:768px){
+  .lineeach{
+    display: flex;
+    gap : 20px;
+    justify-content: center;
+  }
+}
